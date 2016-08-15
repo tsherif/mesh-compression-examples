@@ -149,7 +149,7 @@
     // Draw left sphere uncompressed
     /////////////////////////////////////////////////////
 
-    var leftSphere = createSphere([-0.5, 0, 0], 0.5);
+    var leftSphere = createSphere([-0.5, 0, 0], 0.48);
 
     var positionBuffer = gl.createBuffer();
     var normalBuffer = gl.createBuffer();
@@ -172,7 +172,7 @@
     // and oct-encoded normals.
     /////////////////////////////////////////////////////
 
-    var rightSphere = createSphere([0.5, 0, 0], 0.5);
+    var rightSphere = createSphere([0.5, 0, 0], 0.48);
 
     var b = bounds(rightSphere.positions);
     var q = quantize(rightSphere.positions, b.min, b.max);
