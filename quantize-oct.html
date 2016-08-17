@@ -332,8 +332,8 @@
     function octDecodeVec2(oct) {
         var x = oct[0];
         var y = oct[1];
-        x /= x < 0 ? 127 : 128;
-        y /= y < 0 ? 127 : 128;
+        x /= x < 0 ? 128 : 127;
+        y /= y < 0 ? 128 : 127;
 
         var z = 1 - Math.abs(x) - Math.abs(y);
 
